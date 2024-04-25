@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include('./partials/head.ejs') %>
+  <body>
+    <%- include('./partials/nav.ejs') %>
+    <main class="container" style="padding-top: 0;">
+      <nav>
+        <ul>
+          <li><h5>Students</h5></li>
+        </ul>
+        <ul>
+        </ul>
+      </nav>
+      <input
+        type="search"
+        name="search"
+        placeholder="Search"
+        hx-post="/h-student-search"
+        hx-trigger="input changed delay:100ms"
+        hx-target="#search-results"
+      />
+      <%- include('./partials/studenttable.ejs') %>
+    </main>
+    <%- include('./partials/footer.ejs') %>
+    <script src="/htmx.min.js"></script>
+  </body>
+</html>

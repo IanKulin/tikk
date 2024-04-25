@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%- include('./partials/head.ejs') %>
+
+  <body>
+
+    <%- include('./partials/nav.ejs') %>
+
+      <div class="content" class="not-found">
+        <p>Sorry, something went wrong. The page <code><%= url %></code> does not seem to exist.</p>
+        <p>Perhaps you could try <a href="/">starting over</a></p>
+      </div>
+
+      <%- include('./partials/footer.ejs') %>
+
+  </body>
+
+</html>

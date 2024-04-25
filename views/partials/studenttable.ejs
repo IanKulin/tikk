@@ -1,0 +1,26 @@
+<table role="grid" id="search-results">
+    <thead>
+      <tr>
+        <th>Student</th>
+        <th>Year</th>
+        <th>Form</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% students.forEach(function(student) { %>
+      <tr>
+        <td>
+          <a href="/students/<%= student.id %>"
+            ><%= student.first_name + " " +student.surname %>
+          </a>
+        </td>
+        <td>
+          <a href="/students/<%= student.id %>"><%= student.year %></a>
+        </td>
+        <td>
+          <a href="/students/<%= student.id %>"><%= student.form %></a>
+        </td>
+      </tr>
+      <% }); %>
+    </tbody>
+  </table>

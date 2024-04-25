@@ -1,0 +1,7 @@
+.DS_Store
+.env
+db
+data
+node_modules
+public/htmx.min.js
+public/pico.min.css
